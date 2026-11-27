@@ -19,6 +19,7 @@
 ### Що надсилається в інтернет
 - **Курси валют НБУ** (bank.gov.ua). Додаток запитує офіційний курс на конкретну дату. У запиті є лише дата: ні сум, ні магазинів, ні будь-яких ваших даних.
 - **Перевірка оновлень** (раз на день): запит до api.github.com про останню версію Tapsum і, якщо ви натиснете «Оновити», завантаження APK з GitHub. Жодних ваших даних у запитах немає.
+- **Покупка Tapsum Plus** (версія з Google Play): оплату повністю обробляє Google Play; Tapsum отримує лише ознаку, що підписка активна, і не бачить ваших платіжних даних.
 - **monobank API (лише якщо ви самі підключили).** Tapsum з вашим особистим токеном запитує виписку напряму з api.monobank.ua; дані йдуть з банку на телефон. Токен зберігається на телефоні, зашифрований Android Keystore, і нікуди, крім api.monobank.ua, не надсилається. Відключення видаляє токен.
 - Більше нічого. Аналітики, трекерів і реклами у версіях без реклами немає.
 
@@ -45,6 +46,7 @@
 
 - **Payment notifications** from Samsung Wallet, Google Wallet and banks listed in Settings are read only to extract the amount, currency, merchant, last 4 card digits and transaction type. Other apps' notifications are not read unless you turn on "Read all apps".
 - Purchases, categories, limits, settings, unrecognised payment notifications (kept up to 30 days) and NFC tag IDs are stored in the app's private storage on your phone.
+- **Tapsum Plus purchases** (Google Play version) are processed entirely by Google Play; Tapsum only learns whether the subscription is active and never sees your payment details.
 - **monobank API (only if you connect it):** with your personal token Tapsum fetches your statement directly from api.monobank.ua; the token is stored encrypted (Android Keystore) and sent only to api.monobank.ua.
 - **Update check** once a day (api.github.com) and, if you tap Update, downloading the APK from GitHub; no personal data is sent.
 - **Internet:** otherwise only to fetch official exchange rates from the National Bank of Ukraine (bank.gov.ua). The request contains a date only, with no amounts, merchants or personal data. No analytics, no trackers.
@@ -62,6 +64,7 @@
 
 - **Powiadomienia płatnicze** z Samsung Wallet, Google Wallet i banków z listy w Ustawieniach są odczytywane wyłącznie w celu ustalenia kwoty, waluty, sklepu, 4 ostatnich cyfr karty i typu operacji. Powiadomienia innych aplikacji nie są czytane, chyba że włączysz „Czytaj wszystkie aplikacje”.
 - Zakupy, kategorie, limity, ustawienia, nierozpoznane powiadomienia płatnicze (do 30 dni) i identyfikatory tagów NFC są przechowywane w prywatnej pamięci aplikacji w telefonie.
+- **Zakup Tapsum Plus** (wersja z Google Play) obsługuje w całości Google Play; Tapsum wie tylko, czy subskrypcja jest aktywna, i nie widzi danych płatniczych.
 - **monobank API (tylko jeśli je połączysz):** z Twoim osobistym tokenem Tapsum pobiera wyciąg bezpośrednio z api.monobank.ua; token jest zaszyfrowany (Android Keystore) i wysyłany tylko do api.monobank.ua.
 - **Sprawdzanie aktualizacji** raz dziennie (api.github.com) i pobranie APK z GitHub po naciśnięciu „Aktualizuj”; bez danych osobowych.
 - **Internet:** poza tym tylko do pobrania oficjalnych kursów walut Narodowego Banku Ukrainy (bank.gov.ua). Zapytanie zawiera wyłącznie datę: bez kwot, sklepów ani danych osobowych. Brak analityki i trackerów.
